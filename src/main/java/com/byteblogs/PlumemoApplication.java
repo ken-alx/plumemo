@@ -16,5 +16,6 @@ public class PlumemoApplication {
         SpringApplication springApplication = new SpringApplication(PlumemoApplication.class);
         springApplication.addInitializers(new ConfigApplicationContextInitializer());
         springApplication.run(args);
+		System.out.println("Plumemo Started.");
     }
 }

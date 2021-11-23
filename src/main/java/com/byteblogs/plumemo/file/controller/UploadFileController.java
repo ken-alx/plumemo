@@ -2,6 +2,7 @@ package com.byteblogs.plumemo.file.controller;
 
 import com.byteblogs.common.base.domain.Result;
 import com.byteblogs.plumemo.file.factory.UploadFileFactory;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +18,7 @@ import java.io.IOException;
  * @date: 2019/1/13 10:51
  * @modified:
  */
+@Api(description = "文件")
 @RestController
 @RequestMapping("/file")
 public class UploadFileController {

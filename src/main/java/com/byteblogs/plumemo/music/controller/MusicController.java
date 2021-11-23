@@ -2,12 +2,14 @@ package com.byteblogs.plumemo.music.controller;
 
 import com.byteblogs.common.base.domain.Result;
 import com.byteblogs.plumemo.music.service.MusicService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Api(description = "音乐")
 @RestController
 @CrossOrigin
 @RequestMapping("/music")

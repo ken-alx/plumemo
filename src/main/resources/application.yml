@@ -1,15 +1,15 @@
 server:
   port: 8086
   servlet:
-    context-path: /api/plumemo-service
+    context-path: /plumemo
 spring:
   profiles:
     active: dev
   datasource:
     name: plumemo
-    url:  ${MYSQL_DATABASE:jdbc:mysql://127.0.0.1:3306/plumemo?useSSL=false&characterEncoding=utf8}
-    username: ${MYSQL_USERNAME:root}
-    password: ${MYSQL_PASSWORD:root}
+    url: jdbc:mysql://10.9.1.11:3306/jrtz_app_test?useUnicode=true&characterEncoding=UTF-8&useServerPrepStmts=true&tinyInt1isBit=false&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=Asia/Shanghai&useSSL=true
+    username: dev
+    password: dev*#0415
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
     hikari:

@@ -1,7 +1,9 @@
 package com.byteblogs.common.constant;
 
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ConstantsModels {
 
     public static String getDefaultPath(String url){
